@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --primaryColor: rgb(203, 177, 138);
+    --secondaryColor: rgb(255, 255, 255);
+    --contentColor: rgb(121, 121, 121);
+    --hoverTransition: .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+                        /* NAV */
+
+
+
+
+
+.navTop {
+    transition: .2s;
+    width: 100%;
+    z-index: 999;
+    height: 30px;
+    background-color: var(--secondaryColor);
+}
+
+abbr[title] {
+    border-bottom: none !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.navTop p {
+    line-height: 40px;
+}
+
+.navTopIcons {
+    color: var(--primaryColor);
+    margin: 0 3px 0 6px;
+}
+
+.navTopLink {
+    text-decoration: none;
+    color: var(--contentColor);
+    transition: var(--hoverTransition);
+    font-weight: 500;
+}
+
+.navTopLink:hover {
+    color: var(--primaryColor);
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+    max-height: 80px;
+    background-color: var(--secondaryColor);
+}
+
+.brand {
+    width: 280px;
+    margin-top: 15px;
+    margin-left: 180px;
+}
+
+.links {
+    margin-right: 200px;
+}
+
+nav a {
+    color: var(--contentColor) !important;
+    font-weight: 600 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 12px;
+    font-size: 18px !important;
+    transition: var(--hoverTransition);
+}
+
+nav a:hover {
+    color: var(--primaryColor) !important;
+    background-color: transparent !important;
+}
+
+.home {
+    color: var(--primaryColor) !important;
+}
+
+.navBorder {
+    margin: 0 15px;
+    height: 30px;
+    width: 1px;
+    background-color: var(--contentColor);
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navIcons i {
+    color: var(--contentColor);
+    font-size: 20px;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: var(--hoverTransition);
+}
+
+.navIcons i:hover {
+    color: var(--primaryColor);
+}
