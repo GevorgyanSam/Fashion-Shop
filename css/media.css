@@ -86,7 +86,7 @@
 
 
 
-/* SLIDER */
+                        /* SLIDER */
 
 
 
@@ -121,5 +121,56 @@
 
     .backIcon {
         display: none;
+    }
+}
+
+
+
+
+
+                        /* HURRY UP */
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    
+    .hurryUpContent {
+        text-align: center !important;
+    }
+
+    .hurryUpContent > h1, h2 {
+        margin: 20px !important;
+    }
+
+    .hurryUpContent > h2 {
+        margin-bottom: 30px !important;
+    }
+
+    .hurryUpContent > p {
+        margin: 20px !important;
+        font-weight: 600;
+        color: var(--contentColor);
+        letter-spacing: 1px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .hurryUpParent {
+        padding: 10px 0 !important;
+    }
+
+    .media_3 {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .media_2 {
+        display: none !important;
     }
 }

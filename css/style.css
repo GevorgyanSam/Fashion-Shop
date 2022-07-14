@@ -261,3 +261,76 @@ nav a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+
+
+
+
+                        /* HURRY UP */
+
+
+
+
+
+.hurryUpParent {
+    width: 100%;
+    background-image: url(../img/about_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 80px;
+    min-height: 500px;
+}
+
+.hurryUpContent {
+    text-align: start;
+    opacity: 0;
+    display: none;
+    animation: 1s hurryUpContentAnim forwards;
+}
+
+@keyframes hurryUpContentAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hurryUpContent > h1, h2 {
+    margin: 10px;
+    font-family: 'Comic Neue', cursive;
+    color: var(--primaryColor);
+}
+
+.hurryUpContent > h2 {
+    margin-bottom: 20px;
+}
+
+.hurryUpContent > p {
+    margin: 10px;
+    color: var(--contentColor);
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.hurryUpContent > button {
+    text-transform: uppercase;
+    background-color: var(--primaryColor);
+    height: 40px;
+    width: 120px;
+    margin: 20px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: var(--hoverTransition);
+}
+
+.hurryUpContent > button:hover {
+    border: 2px solid var(--primaryColor);
+    background-color: white;
+    color: var(--primaryColor);
+}
