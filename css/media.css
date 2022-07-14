@@ -134,6 +134,15 @@
 
 
 
+@media only screen and (max-width: 1600px) {
+
+    .hurryUpContent {
+        display: block !important;
+    }
+    .productParentChild {
+        display: block !important;
+    }
+}
 @media only screen and (max-width: 1200px) {
     
     .hurryUpContent {

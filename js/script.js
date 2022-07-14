@@ -3,6 +3,7 @@
 let navTop = document.querySelector(".navTop");
 let scollUp = document.querySelector(".scrollUp");
 let hurryUpContent = document.querySelector(".hurryUpContent");
+let productParentChild = document.querySelector(".productParentChild");
 
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -26,5 +27,11 @@ scollUp.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         hurryUpContent.style.display = "block";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+        productParentChild.style.display = "block";
     }
 });

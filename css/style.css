@@ -334,3 +334,142 @@ nav a:hover {
     background-color: white;
     color: var(--primaryColor);
 }
+
+
+
+
+
+                        /* OUR PRODUCTS */
+
+
+
+
+
+.productsParent {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    min-height: 700px;
+}
+
+.productParentChild {
+    display: none;
+}
+
+.productsParent h1 {
+    color: var(--primaryColor);
+    font-family: 'Comic Neue', cursive;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.productsParent p {
+    color: var(--contentColor);
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.productHeader {
+    animation: 1s productHeaderAnim .5s forwards;
+    opacity: 0;
+}
+
+@keyframes productHeaderAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.productContentParent {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: 1s productContentAnim 1s forwards;
+}
+
+@keyframes productContentAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.product-item {
+    margin-top: 20px;
+}
+
+.productLink {
+    margin: 10px 0;
+}
+
+.productLink > a {
+    color: var(--contentColor);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: var(--hoverTransition);
+}
+
+.productLink > a:hover {
+    color: var(--primaryColor);
+}
+
+.starParent {
+    margin: 10px 0;
+}
+
+.starParent > i {
+    color: var(--primaryColor);
+}
+
+.product-item > p {
+    margin: 10px 0;
+    color: var(--contentColor);
+}
+
+.product-item > p > span {
+    margin: 0 5px;
+}
+
+.product-item > p > span:nth-child(1) {
+    text-decoration: line-through;
+}
+
+.product-item > p > span:nth-child(2) {
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+
+.product-item > button {
+    margin-top: 5px;
+    color: white;
+    background-color: var(--primaryColor);
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--hoverTransition);
+}
+
+.product-item > button:hover {
+    color: var(--primaryColor);
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+}
+
+.product-item > button > i {
+    margin-right: 5px;
+}
