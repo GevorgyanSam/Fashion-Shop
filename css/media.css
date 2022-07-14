@@ -139,10 +139,16 @@
     .hurryUpContent {
         display: block !important;
     }
+
     .productParentChild {
         display: block !important;
     }
+
+    .paralaxParentChild {
+        display: block !important;
+    }
 }
+
 @media only screen and (max-width: 1200px) {
     
     .hurryUpContent {
@@ -181,5 +187,37 @@
 
     .media_2 {
         display: none !important;
+    }
+}
+
+
+
+
+
+                        /* OUR PRODUCTS */
+
+
+
+
+
+@media only screen and (max-width: 1320px) {
+
+    .paralaxMedia2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .paralaxParentChild {
+        padding: 0 30px !important;
+        text-align: center !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .paralaxParentChild {
+        padding: 0 !important;
     }
 }

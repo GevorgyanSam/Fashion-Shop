@@ -4,6 +4,7 @@ let navTop = document.querySelector(".navTop");
 let scollUp = document.querySelector(".scrollUp");
 let hurryUpContent = document.querySelector(".hurryUpContent");
 let productParentChild = document.querySelector(".productParentChild");
+let paralaxParentChild = document.querySelector(".paralaxParentChild");
 
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -33,5 +34,11 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
         productParentChild.style.display = "block";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 1380 || document.documentElement.scrollTop > 1380) {
+        paralaxParentChild.style.display = "block";
     }
 });

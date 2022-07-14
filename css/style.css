@@ -473,3 +473,95 @@ nav a:hover {
 .product-item > button > i {
     margin-right: 5px;
 }
+
+
+
+
+
+                        /* OUR PRODUCTS */
+
+
+
+
+
+.paralaxParent {
+    position: relative;
+    padding: 80px 0;
+    background-image: url(../img/paralax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    width: 100%;
+}
+
+.paralaxParentChild {
+    padding: 0 120px;
+    text-align: start;
+    display: none;
+}
+
+.paralaxParent h1 {
+    color: var(--secondaryColor);
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.paralaxParent p {
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+    line-height: 27px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.paralaxChildren {
+    animation: 1s paralaxAnimLeft .5s forwards;
+    opacity: 0;
+}
+
+@keyframes paralaxAnimLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.paralaxYearParent {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    animation: 1s paralaxAnimRight .5s forwards;
+    opacity: 0;
+}
+
+@keyframes paralaxAnimRight {
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.paralaxYearParent > div > div{
+    margin: 30px 0;
+}
+
+.paralaxParentChild h5 {
+    font-size: 55px;
+    color: var(--primaryColor);
+}
+
+.paralaxParentChild h4 {
+    color: var(--secondaryColor);
+    font-size: 20px;
+}
