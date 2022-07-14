@@ -120,3 +120,144 @@ nav a:hover {
 .navIcons i:hover {
     color: var(--primaryColor);
 }
+
+.scrollUp {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 999;
+    border: 1px solid var(--primaryColor);
+    transition: var(--hoverTransition);
+    opacity: 0;
+}
+
+.scrollUp:hover {
+    background-color: var(--primaryColor);
+    border: 1px solid transparent;
+}
+
+.scrollUp:hover i {
+    color: white;
+}
+
+.scrollUp:active {
+    transform: scale(0.9);
+}
+
+.scrollUp > i {
+    font-size: 25px;
+    color: var(--primaryColor);
+}
+
+
+
+
+
+                        /* SLIDER */
+
+
+
+
+
+.slideParent {
+    padding-top: 80px;
+    position: relative;
+}
+
+.backIcon {
+    background-color: var(--contentColor);
+    padding: 15px !important;
+    border-radius: 50%;
+}
+
+.back {
+    border-radius: 0 50% 50% 0;
+}
+
+.next {
+    border-radius: 50% 0 0 50%;
+}
+
+.carousel-control-prev {
+    justify-content: flex-start !important;
+}
+
+.carousel-control-next {
+    justify-content: flex-end !important;
+}
+
+.firstSliderBox {
+    min-height: 200px;
+    width: 800px;
+    background-image: linear-gradient(to right, rgb(20, 20, 20), transparent);
+    position: absolute;
+    bottom: 30%;
+    left: 7%;
+    border-radius: 5px;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: start;
+    opacity: 0;
+    animation: 3.5s slideAnimIn .7s forwards;
+}
+
+@keyframes slideAnimIn {
+    0% {
+        bottom: 0%;
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        bottom: 30%;
+    }
+    50% {
+        opacity: 1;
+        bottom: 30%;
+    }
+    75% {
+        opacity: 1;
+        bottom: 30%;
+    }
+    100% {
+        bottom: 0%;
+        opacity: 0;
+    }
+}
+
+.firstSliderBox > h5 {
+    color: var(--primaryColor);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 30px;
+    margin-left: 30px;
+}
+
+.firstSliderBox > h5 + p {
+    color: var(--secondaryColor);
+    margin: 15px;
+    margin-left: 30px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.firstSliderBox > h5 + p + button {
+    height: 40px;
+    width: 120px;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 0px 30px 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

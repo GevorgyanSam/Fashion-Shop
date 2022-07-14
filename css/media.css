@@ -10,6 +10,7 @@
 
 
 @media only screen and (max-width: 1600px) {
+
     .brand {
         width: 280px;
         margin-top: 15px;
@@ -22,6 +23,7 @@
 }
 
 @media only screen and (max-width: 1320px) {
+
     .brand {
         width: 280px;
         margin-top: 15px;
@@ -34,6 +36,7 @@
 }
 
 @media only screen and (max-width: 1140px) {
+
     .brand {
         width: 280px;
         margin-top: 15px;
@@ -50,18 +53,21 @@
 }
 
 @media only screen and (max-width: 1000px) {
+
     .navIcons {
         display: none !important;
     }
 }
 
 @media only screen and (max-width: 767px) {
+
     nav {
         max-height: 500px !important;
     }
 }
 
 @media only screen and (max-width: 460px) {
+
     .brand {
         width: 220px !important;
         margin-left: -15px !important;
@@ -69,8 +75,51 @@
 }
 
 @media only screen and (max-width: 350px) {
+
     .brand {
         width: 180px !important;
         margin-left: -25px !important;
+    }
+}
+
+
+
+
+
+/* SLIDER */
+
+
+
+
+
+@media only screen and (max-width: 1320px) {
+
+    .firstSliderBox {
+        width: 600px !important;
+    }
+
+    .firstSliderBox > h5 {
+        font-size: 25px !important;
+    }
+
+    .firstSliderBox > h5 + p {
+        font-size: 16px !important;
+    }
+
+    .firstSliderBox > h5 + p + button {
+        height: 30px !important;
+        width: 100px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .slideParent {
+        padding-top: 110px !important;
+    }
+
+    .backIcon {
+        display: none;
     }
 }
