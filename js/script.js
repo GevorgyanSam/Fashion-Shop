@@ -7,6 +7,7 @@ let productParentChild = document.querySelector(".productParentChild");
 let paralaxParentChild = document.querySelector(".paralaxParentChild");
 let productParentChild2 = document.querySelector(".productParentChild2");
 let teamParentChild = document.querySelector(".teamParentChild");
+let latestParentChild = document.querySelector(".latestParentChild");
 
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -54,5 +55,11 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 2400 || document.documentElement.scrollTop > 2400) {
         teamParentChild.style.display = "block";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 3100 || document.documentElement.scrollTop > 3100) {
+        latestParentChild.style.display = "block";
     }
 });

@@ -1,3 +1,40 @@
+                        
+
+
+
+
+                        /* FIXED ANIMATION BUGS ON RESIZE */
+
+
+
+
+                        
+@media only screen and (max-width: 1600px) {
+
+    .hurryUpContent {
+        display: block !important;
+    }
+
+    .productParentChild {
+        display: block !important;
+    }
+
+    .paralaxParentChild {
+        display: block !important;
+    }
+
+    .productParentChild2 {
+        display: block !important;
+    }
+
+    .teamParentChild {
+        display: block !important;
+    }
+
+    .latestParentChild {
+        display: block !important;
+    }
+}
 
 
 
@@ -141,28 +178,6 @@
 
 
 
-@media only screen and (max-width: 1600px) {
-
-    .hurryUpContent {
-        display: block !important;
-    }
-
-    .productParentChild {
-        display: block !important;
-    }
-
-    .paralaxParentChild {
-        display: block !important;
-    }
-
-    .productParentChild2 {
-        display: block !important;
-    }
-
-    .teamParentChild {
-        display: block !important;
-    }
-}
 
 @media only screen and (max-width: 1200px) {
     
@@ -298,5 +313,114 @@
 
     .teamContent .teamItem p span {
         display: inline-block;
+    }
+}
+
+
+
+
+
+                        /* LATEST FASHION */
+
+
+
+
+
+@media only screen and (max-width: 1530px) {
+
+    .latestParent {
+        min-height: 700px !important;
+    }
+
+    .latestContent {
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .latestItem div > span {
+        margin: 0 !important;
+        font-size: 15px !important;
+    }
+
+    .latestItem div > span:nth-child(1) {
+        margin-left: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 1217px) {
+
+    .latestContent .latestItem {
+        margin: 0 !important;
+    }
+
+    .latestItem img {
+        max-width: 600px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .latestItem div > span {
+        font-size: 20px !important;
+        margin: 0 20px !important;
+    }
+    
+    .latestItem div > span i {
+        font-size: 22px !important;
+        margin-right: 15px !important;
+    }
+
+    .latestItem div > h4 {
+        font-size: 25px !important;
+        margin: 15px 0 !important;
+    }
+
+    .latestItem div > p {
+        font-size: 20px !important;
+        margin: 15px 0 !important;
+    }
+
+    .latestItem div > button {
+        height: 45px !important;
+        width: 150px !important;
+        margin: 15px 0 !important;
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .latestItem img {
+        max-width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .latestItem div > span {
+        font-size: 16px !important;
+        margin: 0 5px !important;
+    }
+    
+    .latestItem div > span i {
+        font-size: 18px !important;
+        margin-right: 5px !important;
+    }
+
+    .latestItem div > h4 {
+        font-size: 20px !important;
+        margin: 10px 0 !important;
+    }
+
+    .latestItem div > p {
+        font-size: 18px !important;
+        margin: 10px 0 !important;
+    }
+
+    .latestItem div > button {
+        height: 35px !important;
+        width: 120px !important;
+        margin: 10px 0 !important;
+        font-size: 16px !important;
     }
 }
