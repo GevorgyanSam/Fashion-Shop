@@ -352,7 +352,7 @@ nav a:hover {
     min-height: 700px;
 }
 
-.productParentChild {
+.productParentChild, .productParentChild2{
     display: none;
 }
 
@@ -478,7 +478,7 @@ nav a:hover {
 
 
 
-                        /* OUR PRODUCTS */
+                        /* PARALAX */
 
 
 

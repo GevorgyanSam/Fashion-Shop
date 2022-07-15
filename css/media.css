@@ -147,6 +147,10 @@
     .paralaxParentChild {
         display: block !important;
     }
+
+    .paralaxParentChild2 {
+        display: block !important;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
