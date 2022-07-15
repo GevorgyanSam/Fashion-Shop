@@ -158,6 +158,10 @@
     .productParentChild2 {
         display: block !important;
     }
+
+    .teamParentChild {
+        display: block !important;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -251,5 +255,48 @@
 
     .paralaxParentChild {
         padding: 0 !important;
+    }
+}
+
+
+
+
+
+                        /* TEAM */
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    .teamContent .teamItem {
+        margin-top: 50px !important;
+        padding: 30px;
+        margin: 0 20px !important;
+        border-radius: 10px;
+        background-color: var(--secondaryColor);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .teamContent .teamItem {
+        margin-top: 50px !important;
+        padding: 30px;
+        margin: 0 10px !important;
+        border-radius: 10px;
+        background-color: var(--secondaryColor);
+    }
+
+    .teamContent .teamItem p span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .teamContent .teamItem p span {
+        display: inline-block;
     }
 }

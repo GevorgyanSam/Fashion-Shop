@@ -13,6 +13,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 
@@ -24,6 +25,10 @@ html {
 
 
 
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
 
 .navTop {
     transition: .2s;
@@ -564,4 +569,105 @@ nav a:hover {
 .paralaxParentChild h4 {
     color: var(--secondaryColor);
     font-size: 20px;
+}
+
+
+
+
+
+                        /* TEAM */
+
+
+
+
+
+.teamParent {
+    width: 100%;
+    min-height: 700px;
+    background-color: rgb(245, 248, 255);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.teamParentChild {
+    display: none;
+}
+
+.teamHeader h1 {
+    color: var(--primaryColor);
+    font-family: 'Comic Neue', cursive;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.teamHeader p {
+    color: var(--contentColor);
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.teamHeader {
+    animation: 1s teamHeaderAnim .5s forwards;
+    opacity: 0;
+}
+
+@keyframes teamHeaderAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.teamContent {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    animation: 1s teamContentAnim 1s forwards;
+}
+
+@keyframes teamContentAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.teamContent .teamItem {
+    margin-top: 50px !important;
+    padding: 30px;
+    margin: 0 50px;
+    border-radius: 10px;
+    background-color: var(--secondaryColor);
+}
+
+.teamContent .teamItem img {
+    border-radius: 50%;
+    max-width: 130px;
+    margin-bottom: 10px;
+}
+
+.teamContent .teamItem p {
+    color: var(--contentColor);
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.teamContent .teamItem h5 {
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+
+.teamContent .teamItem h4 {
+    color: var(--contentColor);
+    font-size: 18px;
 }
