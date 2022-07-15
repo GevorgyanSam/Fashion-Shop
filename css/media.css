@@ -424,3 +424,37 @@
         font-size: 16px !important;
     }
 }
+
+
+
+
+
+                        /* FOOTER */
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+    .footerParentChild {
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .footerItem:nth-child(2), .footerItem:nth-child(3) {
+        display: none;
+    }
+
+    .footerLinks {
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .footerParent {
+        padding: 50px 0 !important;
+    }
+}

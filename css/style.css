@@ -9,6 +9,7 @@ body {
     --secondaryColor: rgb(255, 255, 255);
     --contentColor: rgb(121, 121, 121);
     --hoverTransition: .5s;
+    overflow-x: hidden;
 }
 
 html {
@@ -811,4 +812,143 @@ nav a:hover {
     background-color: white;
     color: var(--primaryColor);
     border: 1px solid var(--primaryColor);
+}
+
+
+
+
+
+                        /* FOOTER */
+
+
+
+
+
+.footerParent {
+    background-color: rgb(34 34 34);
+    padding: 70px;
+}
+
+.footerParentChild {
+    text-align: start;
+    align-items: start;
+    justify-content: center;
+    color: white;
+}
+
+.footerItem {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footerItem h4 {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.footerItem span, p, i {
+    color: var(--contentColor);
+}
+
+.footerItem:nth-child(1) div {
+    margin-bottom: 15px;
+}
+
+.footerItem .fa-solid, .fa-regular {
+    font-size: 15px;
+    margin: 0 5px 0 10px;
+}
+
+.footerItem button {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    height: 35px;
+    width: 120px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    transition: var(--hoverTransition);
+}
+
+.footerItem button:hover {
+    color: var(--primaryColor);
+    background-color: transparent;
+    border: 1px solid var(--primaryColor);
+}
+
+.footerLinks {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+}
+
+.footerLinks i {
+    transition: var(--hoverTransition);
+}
+
+.footerLinks div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--hoverTransition);
+}
+
+.footerLinks div:hover {
+    background-color: var(--primaryColor);
+}
+
+.footerLinks div:hover i {
+    color: var(--secondaryColor);
+}
+
+.footerItem p {
+    display: inline-block;
+    transition: var(--hoverTransition);
+}
+
+.footerItem i {
+    transition: var(--hoverTransition);
+}
+
+.footerItem p:hover {
+    cursor: pointer;
+}
+
+.footerItem p:hover i {
+    color: var(--primaryColor);
+    margin-right: 10px;
+}
+
+.footerItem img {
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.footerBottom {
+    background-color: rgb(26, 26, 26);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footerBottom p {
+    transform: translate(0, 50%);
+    color: var(--contentColor);
+}
+
+.footerBottom a {
+    color: var(--primaryColor);
+    text-decoration: none;
 }
