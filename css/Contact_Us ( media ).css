@@ -93,3 +93,55 @@
         text-align: center;
     }
 }
+
+
+
+
+
+                        /* MAP */
+
+
+
+
+
+@media only screen and (max-width: 1999px) {
+
+    iframe {
+        height: 350px !important;
+        width: 100%;
+    }
+}
+
+
+
+
+
+                        /* FOOTER */
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+    .footerParentChild {
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .footerItem:nth-child(2), .footerItem:nth-child(3) {
+        display: none;
+    }
+
+    .footerLinks {
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .footerParent {
+        padding: 50px 0 !important;
+    }
+}
