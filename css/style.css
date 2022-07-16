@@ -181,6 +181,7 @@ nav a:hover {
 .scrollUp > i {
     font-size: 25px;
     color: var(--primaryColor);
+    transition: var(--hoverTransition);
 }
 
 
@@ -479,7 +480,7 @@ nav a:hover {
 
 .product-item > button {
     margin-top: 5px;
-    color: white;
+    color: white !important;
     background-color: var(--primaryColor);
     height: 35px;
     width: 130px;
@@ -490,13 +491,19 @@ nav a:hover {
 }
 
 .product-item > button:hover {
-    color: var(--primaryColor);
+    color: var(--primaryColor) !important;
     background-color: transparent;
     border: 2px solid var(--primaryColor);
 }
 
+.product-item > button:hover i {
+    color: var(--primaryColor);
+}
+
 .product-item > button > i {
+    transition: var(--hoverTransition);
     margin-right: 5px;
+    color: white;
 }
 
 
@@ -826,7 +833,9 @@ nav a:hover {
 
 .footerParent {
     background-color: rgb(34 34 34);
-    padding: 70px;
+    padding: 60px;
+    min-height: 470px;
+    width: 100%;
 }
 
 .footerParentChild {
@@ -834,6 +843,20 @@ nav a:hover {
     align-items: start;
     justify-content: center;
     color: white;
+    display: none;
+    animation: 1s footerHeaderAnim .5s forwards;
+    opacity: 0;
+}
+
+@keyframes footerHeaderAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .footerItem {
@@ -936,11 +959,29 @@ nav a:hover {
 
 .footerBottom {
     background-color: rgb(26, 26, 26);
-    padding: 40px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 100px;
+}
+
+@keyframes footerHeaderAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.footerBottomHeader {
+    display: none;
+    animation: 1s footerHeaderAnim 1s forwards;
+    opacity: 0;
 }
 
 .footerBottom p {

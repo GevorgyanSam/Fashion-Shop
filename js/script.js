@@ -8,6 +8,8 @@ let paralaxParentChild = document.querySelector(".paralaxParentChild");
 let productParentChild2 = document.querySelector(".productParentChild2");
 let teamParentChild = document.querySelector(".teamParentChild");
 let latestParentChild = document.querySelector(".latestParentChild");
+let footerParentChild = document.querySelector(".footerParentChild");
+let footerBottomHeader = document.querySelector(".footerBottomHeader");
 
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -61,5 +63,17 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
     if (document.body.scrollTop > 3100 || document.documentElement.scrollTop > 3100) {
         latestParentChild.style.display = "block";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+        footerParentChild.style.display = "flex";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 4010 || document.documentElement.scrollTop > 4010) {
+        footerBottomHeader.style.display = "block";
     }
 });
